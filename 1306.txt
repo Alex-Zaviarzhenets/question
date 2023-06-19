@@ -1,0 +1,81 @@
+package HOMEWORK;
+
+import java.util.Scanner;
+
+public class homework1306 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("print number drink");
+        int choice = sc.nextInt();
+
+        if (choice >= 1 && choice <= 4) {
+            if (choice == 1) {
+                makeEspresso();
+            } else if (choice == 2) {
+                makeAmericano();
+            } else if (choice == 3) {
+                makeCappucino();
+            } else if (choice == 4) ;
+            {
+                makeTea();
+            }
+       else
+        }
+
+
+
+
+        switch (choice) {
+            case 1:
+                makeEspresso();
+                break;
+
+            case 2:
+                makeAmericano();
+                break;
+
+            case 3:
+                makeCappucino();
+                break;
+
+            case 4:
+                makeTea();
+                break;
+
+            default:
+                System.out.println("error");
+                break;
+        }
+
+
+    }
+
+
+    public static void makeEspresso() {
+        System.out.println("prepare Espresso...");
+        System.out.println("Espresso ready");
+
+
+    }
+
+    public static void makeAmericano() {
+        System.out.println("prepare Americano...");
+        System.out.println("adding water");
+        System.out.println("Americano ready");
+
+    }
+
+    public static void makeCappucino() {
+        System.out.println("prepare Capuccino");
+        System.out.println("adding milk");
+        System.out.println("Capuccino ready");
+
+    }
+
+    public static void makeTea() {
+        System.out.println("prepare Tea");
+        System.out.println("adding sugar");
+        System.out.println("Tea ready");
+
+    }
+}
